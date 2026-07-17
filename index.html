@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>University Club Membership Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AIUB</h1>
+      <h2>University Club Membership Registration</h2>
+
+      <form id="clubForm">
+        <label>First Name</label>
+        <input type="text" id="fname" />
+
+        <label>Last Name</label>
+        <input type="text" id="lname" />
+
+        <label>Email</label>
+        <input type="email" id="email" />
+
+        <label>Password</label>
+        <input type="password" id="password" />
+
+        <label>Gender</label>
+
+        <div class="radio">
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+        </div>
+        <label>Interested Clubs</label>
+        <div class="checkbox">
+          <input type="checkbox" name="club" value="Programming" /> ARTS CLUB
+          <input type="checkbox" name="club" value="Sports" /> AIUB COMPUTER CLUB
+          <input type="checkbox" name="club" value="Photography" /> RESEARCH CLUB
+          <input type="checkbox" name="club" value="Music" /> MUSIC CLUB
+        </div>
+
+        <label>Club Category</label>
+
+        <select id="category">
+          <option value="">Select Category</option>
+          <option>Creative</option>
+          <option>Technical</option>
+          <option>Sports</option>
+        </select>
+
+        <label>Why do you want to join?</label>
+
+        <textarea id="reason" rows="5"></textarea>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
